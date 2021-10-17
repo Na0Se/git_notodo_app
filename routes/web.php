@@ -14,6 +14,7 @@ if (env('APP_ENV') === 'local') {
    URL::forceScheme('https');
 }
 
+
 Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
