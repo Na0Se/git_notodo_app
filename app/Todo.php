@@ -19,4 +19,10 @@ class Todo extends Model
     {
         return $this->belongsTo('App\Goal');
     }
+    
+    //relation to Tag.php
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag');
+    }
 }
