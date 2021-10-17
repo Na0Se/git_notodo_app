@@ -10,4 +10,9 @@ class Goal extends Model
     {
         return $this->belongsTo('App\User');
     }
+    
+    public function todos()
+    {
+        return $this->hasMany('App\Todo');
+    }
 }
