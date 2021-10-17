@@ -37,11 +37,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     
+    //relation to Goal.php
     public function goals()
     {
         return $this->hasMany('App\Goal');
     }
     
+    //relation to Todo.php
     public function todos()
     {
         return $this->hasMany('App\Todo');
