@@ -46,13 +46,14 @@
         @endcomponent
 
         <main class="bg-home d-flex align-items-center w-100 h-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-11 col-lg-10 jumbotron mx-auto mt-4" style="box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2)">
-                        @yield('content')
-                    </div>
-                </div>
-            </div>
+         <ul>
+          <li class="nav-item">
+               <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+           </li>
+         </ul>
         </main>
 
         @component('components.footer')
