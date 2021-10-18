@@ -10,15 +10,20 @@
 |
 */
 
-if (env('APP_ENV') === 'local') {
+/*if (env('APP_ENV') === 'local') {
    URL::forceScheme('https');
-}
+}*/
 
 Route::get('/welcome', 'WelcomeController@index')->name('welcome');
 
 Route::get('/', 'WelcomeController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/login/{service}', 'OAuthLoginController@getGoogleAuth')->where('service', 'google');
+
+Route::get('/login/google/callback', 'OAuthLoginController@authGoogleCallback');
+
 
 Route::resource("goals", "GoalController")->middleware('auth');
 
