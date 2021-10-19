@@ -49,7 +49,7 @@
             <div class="position-relative overflow-hidden p-3 p-md-5 mx-auto mt-4 text-center bg-light">
                 <div class="col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal"><i class="fa fa-check-circle" aria-hidden="true"></i>NotToDo</h1>
-                    <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+                    <p class="lead font-weight-normal">Welcome to the NotToDo website. This is Website that you can take note of what not to do. It's very simple, so sign up and try it out.</p>
                     <a class="btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
                     <a class="btn btn-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </div>
