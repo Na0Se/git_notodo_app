@@ -53,6 +53,7 @@
                     <a class="btn btn-primary" href="{{ route('register') }}">{{ __('Register') }}</a>
                     <a class="btn btn-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </div>
+                <p>テストユーザー用ID：aiueo@gmail.com <br>テストユーザー用PASS: aiueoooo</p>
                 <div class="product-device shadow-sm d-none d-md-block"></div>
                 <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
             </div>

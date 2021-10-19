@@ -1,72 +1,62 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# NotToDo
+<img width="644" alt="スクリーンショット 2021-10-20 3 58 49" src="https://user-images.githubusercontent.com/90996828/137974024-fd8193d0-5d02-499b-9134-372ba49737f9.png">
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+やらないこと（Not to do）リストを作成できるwebアプリです。
 
-## About Laravel
+## 簡単な説明
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+ログインすることで機能を使用することができます。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+テストユーザー用ID：aiueo@gmail.com
+テストユーザー用PASS: aiueoooo
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+フォルダーのように場所を分類してリストを管理できるので、「やるべきでないこと」「今はやるべきでないこと」のように目的に沿ったリストの作成が可能です。
+また、作ったリストもタグをつけることで分類可能です。
 
-## Learning Laravel
+## 機能
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 機能1　NotToDoリスト作成
+- 機能2　NotToDoリスト管理
+- 機能3　NotToDoリスト削除
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 必要要件
 
-## Laravel Sponsors
+- safariで起動すると時間がかかるので、使うブラウザはchromeをお勧めします。
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## 使い方
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+![ログイン](https://user-images.githubusercontent.com/90996828/137984786-fd2cd82b-1179-4a75-98ce-b5f75030a908.gif)
 
-## Contributing
+1. registerもしくはloginからサインインして、マイページに移動します。
+2. 左上のCreate A New Goalから新規のフォルダー(Goal)を作成できます。
+3. Addボタンで作成したら、今度は具体的に何をやらないのかを追加していきます。
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![Todo作成](https://user-images.githubusercontent.com/90996828/137985302-a3e7e78b-b3b6-41b9-bcf0-ae148b14015d.gif)
 
-## Security Vulnerabilities
+4. 作成したフォルダー(Goal)の右上「+」をクリックすると、Todoを追加できるようになります。
+5. Todo右上のマークを押してもらうと、「Done」「Edit」「Sort」「Delete」が選択できます。
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![タグ作成](https://user-images.githubusercontent.com/90996828/137985428-c2a414a7-e299-413a-a674-da4f1c54ebcd.gif)
 
-## License
+6. マイページ画面左上「Manage Tag」ではリストへのタグを作成できます。4で説明した「Edit」で作成したタグを追加できます。
+7. ログアウトはマイページ画面右上からできます。
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 開発環境
+HTML/CSS/PHP/Laravel/Vue/Bootstrap/fontawesome/cloud9
+
+## インストール
+
+```
+$ git clone https://github.com/Na0Se/git_notodo_app.git
+$ cd Notodo_app
+$ sh setup.sh
+$ ~do anything~
+```
+
+
+## その他
+
+やらないことリストを作る前提で作成しました。
+何をやらないのかをどんどんメモすることによって、無駄な時間を省くことができます。作成理由は、To DOアプリはたくさんありますが、Not To Doアプリがwebになかったからです。
+正直、To Doリストと同じ作りになってしまいました。
+
