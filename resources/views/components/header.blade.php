@@ -1,5 +1,5 @@
 <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <a href="/" class="navbar-brand">NOTTODO App</a>
+  <a href="/" class="navbar-brand"><i class="fa fa-check-circle" aria-hidden="true"></i>NotToDo</a>
   <button
     class="navbar-toggler"
     type="button"

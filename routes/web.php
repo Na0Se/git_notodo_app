@@ -10,9 +10,9 @@
 |
 */
 
-/*if (env('APP_ENV') === 'local') {
+if (env('APP_ENV') === 'local') {
    URL::forceScheme('https');
-}*/
+}
 
 Route::get('/welcome', 'WelcomeController@index')->name('welcome');
 

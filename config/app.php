@@ -13,7 +13,10 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name_app' => env('APP_NAME', 'NotToDo'),
+    'name_login' => env('LOGIN_NAME', 'NotToDoサインイン'),
+    'name_home' => env('HOME_NAME', 'NotToDoホームページ'),
+    
 
     /*
     |--------------------------------------------------------------------------
